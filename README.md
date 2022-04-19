@@ -5,7 +5,10 @@
 
 ## 📖 교재
 ![http_cover](http_cover.jpeg)
-- [**HTTP: The Definitive Guide (OREILLY)**](https://www.oreilly.com/library/view/http-the-definitive/1565925092/)
+- 영문 교재
+  - [**HTTP: The Definitive Guide (OREILLY)**](https://www.oreilly.com/library/view/http-the-definitive/1565925092/)
+- 한글 교재
+  - [**HTTP 완벽 가이드 웹은 어떻게 동작하는가**](http://www.kyobobook.co.kr/product/detailViewKor.laf?mallGb=KOR&ejkGb=KOR&barcode=9788966261208)
 
 ## 📜 스터디 진행 방식
 
