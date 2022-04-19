@@ -1,8 +1,6 @@
 # HTTP 스터디
 <p align="center"><img src = "cover_image.png"/></p>
 
-### WE NEED COVER IMAGE
-
 ## 📖 교재
 ![http_cover](http_cover.jpeg)
 - 영문 교재
