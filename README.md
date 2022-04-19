@@ -1,5 +1,5 @@
 # HTTP 스터디
-<p align="center"><img src = "doobooking.png" width=400/></p>
+<p align="center"><img src = "cover_image.png" width=400/></p>
 
 ### WE NEED COVER IMAGE
 
