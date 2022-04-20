@@ -25,7 +25,7 @@ URL : [http://www.joes-hardware.com:80/power-tools.html](http://www.joes-hardwar
 
 TCP는 IP 패킷(또는 IP 데이터그램)이라고 불리는 데이터 조각으로 전송된다. 관계된 프로토콜 스택을 보면 아래와 같다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/96A56588-7051-4553-9EA5-5A84EA37ADF0_2/8sCbN8aVysNlVI1yjfCz7TOWiBoq3YD7Io3rcBgwXgUz/Image)
+![Image](./asset/asset_chap_4_1_재영.png)
 
 HTTP는 `'IP, TCP, HTTP'`로 구성된 `프로토콜 스택`에서 최상위 계층이다.
 
@@ -33,7 +33,7 @@ TCP는 `세그먼트`라는 단위로 데이터 스트림을 잘게 나누고, �
 
 이 모든 것은 TCP/IP 소프트웨어에 의해 처리되며, 그 과정은 HTTP 프로그래머에게 보이지 않는다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/A54939C5-7C11-4F4D-A061-8E8B119CDF4C_2/Gv5czw5Vhmcib3bTRcmvwTHyV43XjUmqyqLHBsaDQ5Iz/Image)
+![Image](./asset/asset_chap_4_2_재영.png)
 
 위 그림에서 제일 밑에 HTTP 메시지가 TCP 세그먼트의 일부로 들어가있다.
 
@@ -59,7 +59,7 @@ TCP는 `세그먼트`라는 단위로 데이터 스트림을 잘게 나누고, �
 
 트랜젝션을 처리하는 시간은 TCP 커넥션을 설정하고, 요청을 전송하고, 응답 메시지를 보내는 것에 비하면 상당히 짧다. 대부분의 HTTP 지연은 TCP 네트워크 지연 때문에 발생한다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/AB3C0A01-FD40-4BE2-BBAE-0D0AED6808B9_2/PKoHu54ShWEcQ4shpNyZHmMlyeKbwekFCUPPNdLFxDwz/Image)
+![Image](./asset/asset_chap_4_3_재영.png)
 
 **위 그림에서 알 수 있듯이 처음 커넥션을 여는것과 Request, Response 데이터가 오고 가는데에 대부분의 시간을 다 소모한다.** 정작 실제 서버 데이터 처리 시간은 그에 비하면 매우 짧다.
 
@@ -73,7 +73,7 @@ TCP는 `세그먼트`라는 단위로 데이터 스트림을 잘게 나누고, �
 
 어떤 데이터를 전송하든 새로운 TCP 커넥션을 열 때면, TCP 소프트웨어는 커넥션을 맺기 위한 조건을 맞추기 위해 연속으로 IP 패킷을 교환한다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/0F07BD5B-AEB6-4EA8-801F-816243A2EA4B_2/zIHg0wEdQDy2LV36rgKPBKf5f8A68T08wu5YDnEAOx4z/Image)
+![Image](./asset/asset_chap_4_4_재영.png)
 
 HTTP 프로그래머는 커넥션의 핸드셰이크를 보지 못한다. 그리고 총 세 번의 네트워크 비용이 발생하기 때문에 커넥션을 생성하는 것은 비용이 굉장히 큰 작업이다.
 
@@ -123,7 +123,7 @@ Connection 헤더가 포함된 메시지를 전달받은 HTTP 애플리케이션
 
 클라이언트가 여러 개의 커넥션을 맺음으로써 여러 개의 HTTP 트랜잭션을 병렬로 처리할 수 있게 한다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/C79048F1-8C0F-4C95-B314-4722FC235F91_2/QsnPQ3bw11WAAW4KIGAYgdrsgW0XZERnlFqV41SgpiMz/Image)
+![Image](./asset/asset_chap_4_5_재영.png)
 
 병렬 커넥션의 특징을 다음과 같다.
 
@@ -156,7 +156,7 @@ HTTP/1.0+ 이상의 기기는 처리가 완료된 후에도 TCP 커넥션을 유
 
 **HTTP/1.0+의 Keep-Alive 커넥션**
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/F11ECC33-1575-4E37-8C3F-B2655058F6C4_2/HVlfcJLDPZB0GBRAFbGDKFgXkFq8jByjeUUd6qHjuC0z/Image)
+![Image](./asset/asset_chap_4_6_재영.png)
 
 HTTP/1.0 에서 지속 커넥션을 구현하기 위해 Keep-Alive 커넥션이라는 개념을 도입했다. 이 개념은 설계에 문제가 있어서 HTTP/1.1 부터는 사용되지 않지만 아직도 많은 클라이언트와 서버는 이 초기 keep-alive 핸드셰이크를 활용한 지속 커넥션 방식을 사용하고 있다. 떄문에 우리가 만들 HTTP 애플리케이션 또한 그것을 처리할 수 있게 개발해야한다.
 
@@ -188,7 +188,7 @@ Connection: close 헤더가 없으면 응답 후에도 커넥션은 유지하자
 
 ### 파이프라인 커넥션(HTTP/1.1 Pipelining)
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/B1F54B8C-34A3-4688-AE91-269D5A3D70E3_2/xRyNqhpdTGxyCu5x86PREGcMOEAnXIbmBZFn6NWDzMwz/Image)
+![Image](./asset/asset_chap_4_7_재영.png)
 
 HTTP Pipelining 이란 HTTP1.1 로 스펙이 업그레이드 되면서 클라이언트와 서버 간의 지속 커넥션의 효율성을 개선하기 위해 만들어진 개념이다.
 
@@ -214,7 +214,7 @@ HTTP Pipelining 이란 HTTP1.1 로 스펙이 업그레이드 되면서 클라이
 
 파이프라이닝은 완전한 멀티플렉싱이 아닌 응답처리를 미루는 방식이고, 각 응답의 처리는 순차적이어야 하기에 후순위의 응답은 지연될 수 밖에 없다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/759268E1-30B9-4F40-BB9A-C867CD7BA7DB_2/kJoCaDLeQxcpfIZ6bvsBHZOI7KjWUko8yNoGUyKbY8Iz/Image)
+![Image](./asset/asset_chap_4_8_재영.png)
 
 이를 **HTTP의 Head Of Line Blocking(HOL)** 이라 부르며 Pipelining 의 큰 문제점이다.
 
@@ -242,7 +242,7 @@ HTTP/2 의 특징을 모두 다루기에는 이번 장의 경계를 벗어나는
 
 ### 바이너리 프레임 레이어
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/FF232931-A2E3-4979-A248-E679CE7ED53E_2/w5NbZ2jZyn7k46jbppJYrlbjLtjyoVkvJBH0LJeCSOMz/Image)
+![Image](./asset/asset_chap_4_9_재영.png)
 
 커다란 HTTP 메시지를 한번에 받고 응답하던 HTTP/1.1 과는 달리 HTTP/2 에서는 메시지들을 바이너리 단위로 나누어 더 작은 프레임이라는 단위로 쪼개서 통신한다. 그리고 클라이언트는 이렇게 잘게 나누어진 프레임을 다시 조립해야한다.
 
@@ -250,7 +250,7 @@ HTTP/2 의 특징을 모두 다루기에는 이번 장의 경계를 벗어나는
 
 패킷을 Frame 단위로 세분화하여 순서에 상관없이 받는쪽에서 조립하도록 설계하였기 때문에 각 요청과 응답을 비동기하게 병렬로 주고받을 수 있다. HOL 문제를 해결한 것이다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/0DABD384-F73E-44C9-AC44-A85FEEBC2A58_2/ykBVGo7LfqWEjyeD61fL4EvBOkIIh5KXHN1H2Af03w4z/Image)
+![Image](./asset/asset_chap_4_10_재영.png)
 
 <reference: [https://kemptechnologies.com/es/solutions/http2/](https://kemptechnologies.com/es/solutions/http2/)>
 

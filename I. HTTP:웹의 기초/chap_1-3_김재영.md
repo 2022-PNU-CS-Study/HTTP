@@ -26,7 +26,7 @@ HTTP 프로토콜로 의사소통 하는 두 개의 주체를 HTTP 클라이언�
 
 애플리케이션이 서버 리소스에 접근하기 위한 하나의 **통일된 인터페이스**이다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/259117E7-C400-49CB-A64D-392B202D890B_2/nJfrHsA7ZFuuycJ4fOLDPqYJHtckfJamO3v10M508Gwz/Image)
+![Image](./asset/asset_chap_1-3_1_재영.png)
 
 fragment 라는 부분은 조금 생소할 수 있는데, 한 페이지 안에서 위치를 특정하기 위함이다. (깃헙 리드미에서도 사용할 수 있다.)
 
@@ -73,7 +73,7 @@ TCP/IP는 TCP와 IP가 층을 이루는, 패킷 교환 네트워크 프로토콜
 
 클라이언트의 모든 HTTP 요청을 받아 서버에 대신 전달하는 서버
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/9B4A98E8-F11F-47EA-8171-E64D67D06AE3_2/i2ayt72pmuPNxwof5gf3wtDHhEHQDGJlTwtVxaalbBYz/Image)
+![Image](./asset/asset_chap_1-3_2_재영.png)
 
 **캐시**
 
@@ -101,13 +101,13 @@ TCP/IP는 TCP와 IP가 층을 이루는, 패킷 교환 네트워크 프로토콜
 
 서버를 기준으로 들어가는 방향이 인바운드, 서버에서 외부로 나가는 방향을 아웃바운드라 한다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/F0F33C48-EFAB-49A2-BED5-CA63D5A43624_2/EYCRQMxJwJcxeA5C7nLA48gOyM2wJ9TQQIf8IsSk4FUz/Image)
+![Image](./asset/asset_chap_1-3_3_재영.png)
 
 **다운스트림으로 흐르는 메시지**
 
 메시지는 결코 업스트림으로 흐르지 않는다. 메시지의 발송자는 수신자의 업스트림이다.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/4B651716-3B0E-49AA-80C0-A364D68249ED_2/KWW0f82DyY7obx0yiT9CzyL9qyyIgw3iPXppu0ITjkUz/Image)
+![Image](./asset/asset_chap_1-3_4_재영.png)
 
 ### HTTP 메시지의 각 부분
 
@@ -117,7 +117,7 @@ TCP/IP는 TCP와 IP가 층을 이루는, 패킷 교환 네트워크 프로토콜
 - 헤더 : 속성
 - 본문 : 데이터를 담는다. (아예 없을 수도 있다)
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/F9B249B1-D8A4-4E91-97AD-DF42653711BD_2/MKyHcdOoXBYpqABn0vOmeBtbqEfw029JhmammUEmhfYz/Image)
+![Image](./asset/asset_chap_1-3_5_재영.png)
 
 **시작줄**
 
@@ -133,7 +133,7 @@ HTTP 헤더 필드는 요청과 응답 메시지에 추가 정보를 더한다.
 - Entity 헤더 : 본문 크기와 콘텐츠, 혹은 리소스 그 자체를 서술
 - 확장 헤더 : 명세에 정의되지 않은 새로운 헤더
 
-[헤더에 관해 정리가 아주 잘된 블로]([Network] HTTP 헤더의 종류 및 항목 - Heee's Development Blog https://gmlwjd9405.github.io/2019/01/28/http-header-types.html)그가 있다.
+[헤더에 관해 정리가 아주 잘된 블로그](https://gmlwjd9405.github.io/2019/01/28/http-header-types.html)가 있다.
 
 ### HTTP 메소드
 
@@ -145,7 +145,7 @@ TRACE 는 조금 생소하다.
 
 Client로 부터 Request Packet이 방화벽, Proxy Server, Gateway등을 거치면서 packet의 변조가 일어날 수 있는데, 이 때 **Server에 도달 했을 때의 최종 Packet의 Request Packet을 볼수 있다**.
 
-![Image](https://res.craft.do/user/full/8884c80f-6eec-6a29-2a03-049def967beb/doc/26DBA285-46EA-44C5-B47A-92A3AFF36D21/7CE8F3B5-BA14-4EAE-9663-F00929022504_2/JxGUFGDfJwkIpbBgyHhd6ggJA3tGmvAQiCoewCcuWpAz/Image)
+![Image](./asset/asset_chap_1-3_6_재영.png)
 
 - 즉, **Original Data와 서버에 도달했을 때의 비교본 Data를 서버의 응답 Body를 통해 확인 할 수 있다.**
 - 요청의 최종 수신자는 반드시 **송신자에게 200(OK) 응답의 내용(Body)로 수신한 메세지를 반송**해야 한다.
