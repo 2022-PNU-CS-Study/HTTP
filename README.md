@@ -46,7 +46,7 @@
 ## 👩‍💻🧑‍💻 스터디원
 <img src="joinus.png" width=120> | <img src="https://avatars.githubusercontent.com/u/59327026?v=4" width=100> | <img src="https://avatars.githubusercontent.com/u/59275331?v=4" width=100> | <img src="https://avatars.githubusercontent.com/u/38307205?v=4" width=100>
 :---: | :---: | :---: | :---: |
-공석([@JoinUs](https://github.com/2022-PNU-CS-Study/HTTP)) | 진호([@zzzinho](https://github.com/zzzinho)) | 우영([@wooyoung-tom](https://github.com/wooyoung-tom)) | 재영([@jaeyeong951](https://github.com/jaeyeong951))
+수빈([@subin914](https://github.com/subin914)) | 진호([@zzzinho](https://github.com/zzzinho)) | 우영([@wooyoung-tom](https://github.com/wooyoung-tom)) | 재영([@jaeyeong951](https://github.com/jaeyeong951))
 
 <details>
 <summary>Cover By Hyewon</summary>
