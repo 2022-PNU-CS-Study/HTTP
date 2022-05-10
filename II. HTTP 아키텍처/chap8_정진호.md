@@ -48,7 +48,7 @@ ex) HTTP/FTP
 
 ### CONNECT로 HTTP 커넥션 맺기
 - HTTP의 CONNECT로 웹 터널 사용 가능
-![tunnel](./asset/../tunnel_jinho.png)
+![tunnel](./asset/tunnel_jinho.png)
 1. 터널을 연결하기 위해 CONNECT 요청
 2. TCP 커넥션 형성
 3. TCP 커넥션 형성 완료 후, HTTP 200 Connection Established 전송
@@ -74,7 +74,7 @@ Proxy-agent: Netscape-Proxy/1.1
 - 클라이언트는 인정 요구 또는 200외의 응답이 왔을 때 데이터를 다시 보낼 수 있어야한다.
 
 ### SSL 터널링
-![tunnel_ssl](./asset/../tunnel_ssl_jinho.png)
+![tunnel_ssl](./asset/tunnel_ssl_jinho.png)
 - 웹 터널은 방화벽을 통해서 암호화된 SSL 트래픽을 전달하려도 개발됨
 - SSL같이 암호화된 프로토콜은 정보가 암호화되어있기 때문에 낡은 방식의 프록시에서는 처리되지 않음
 
