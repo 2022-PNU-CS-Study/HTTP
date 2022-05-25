@@ -11,14 +11,14 @@
 
 ### Charset은 글자를 비트로 변환하는 인코딩이다.
 
-![Figure 16.1](./asset/figure_16-1.png)
+![Figure 16.1](./asset/wooyoung_figure_16-1.png)
 
 > HTTP Charset 값은 어떻게 엔터티 컨텐츠 비트들을 특정 문자 체계의 글자들로 바꾸는지 말해준다.
 > 
 
 ### 문자집합과 인코딩은 어떻게 동작하는가
 
-![Figure 16.2](./asset/figure_16-2.png)
+![Figure 16.2](./asset/wooyoung_figure_16-2.png)
 
 1. (a) → 문서를 이루는 비트들은, 특정 코딩된 문자집합의 특정 문자로 식별될 수 있는 문자 코드로 변환된다.
 2. (b) → 문자 코드는 코딩된 문자집합의 특정 요소를 선택하기 위해 사용된다.
@@ -85,7 +85,7 @@ Accept-Charset: iso-8859-1, utf-8
 
 ### 언어 태그
 
-![Figure 16.3](./asset/figure_16-3.png)
+![Figure 16.3](./asset/wooyoung_figure_16-3.png)
 
 - 일반적인 언어의 종류
 - 특정 국가의 언어
@@ -98,7 +98,7 @@ Accept-Charset: iso-8859-1, utf-8
 
 ### 이스케이핑과 역이스케이핑(unescaping)
 
-![Figure 16.4](./asset/figure_16-4.png)
+![Figure 16.4](./asset/wooyoung_figure_16-4.png)
 
 - URI escape
     - 예약된 문자나 다른 지원하지 않는 글자들을 안전하게 URI에 삽입할 수 있는 방법
